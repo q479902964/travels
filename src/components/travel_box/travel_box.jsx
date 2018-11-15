@@ -7,6 +7,21 @@ class Travel_box extends Component{
     render(){
         return(
             <div className='travel_box'>
+                <div className='left_box'>
+                    <img src={require('./test_img.jpeg')} className='bg_img'/>
+                </div>
+                <div className='right_box'>
+                    <div className='basic_content'>
+                        <img className='icon' src={require('./title.png')}></img>
+                        <h1>#我要成为精华作者</h1>
+                        <span>作者：Ken_leung</span>
+                        <span>2018-08-29</span>
+                        <div className='menu_info'><img/><span>38001</span></div>
+                        <div className='menu_info'><img/><span>30</span></div>
+                        <div className='menu_info'><img/><span>536</span></div>
+                    </div>
+                    <p className='main_content'>前言 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                </div>
             </div>
         )
     }
