@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 import PublicHeader from '../../components/header/header'
 import Conditions from '../../components/conditions/conditions'
@@ -18,7 +19,7 @@ class Home extends Component{
                         <Popularity/>
                     </div>
                     <div className='right-box'>
-                        <Travel_box/>
+                        <Link to={"/detail/1"}><Travel_box/></Link>
                         <Travel_box/>
                     </div>
                 </div>

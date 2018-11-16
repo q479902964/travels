@@ -7,7 +7,6 @@ class Detail extends Component{
     render(){
         return(
             <div className='detail'>
-                12313213
                 <PublicHeader/>
             </div>
         )
