@@ -10,8 +10,9 @@ class RouteConfig extends Component{
             <HashRouter>
                 <Switch>
                     <Route path="/home" component={Home}/>
-                    <Route path="/detail" component={Detail}/>
+                    <Route path="/detail/:id?" component={Detail}/>
                     <Route path="/" component={Home}/>
+                    <Redirect to="/home"></Redirect>
                 </Switch>
             </HashRouter>
         )

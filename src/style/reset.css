@@ -19,3 +19,30 @@ body{
 #root{
     height: 100%;
 }
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+   .gu-transit {
+       opacity: 0.2;
+   }
+
+   .gu-mirror {
+       padding: 10px 0;
+   // box-sizing: content-box;
+       background-color: rgba(0, 0, 0, 0.3);
+       border: 2px dashed;
+       transition: opacity 0.4s ease-in-out;
+       position: fixed !important;
+       margin: 0 !important;
+       z-index: 9999 !important;
+       cursor: grabbing;
+       cursor: -moz-grabbing;
+       cursor: -webkit-grabbing;
+   }
+
+.gu-hide {
+    display: none !important;
+}

@@ -13,16 +13,19 @@ class Header extends Component{
                     <img src={require('./title.png')} className='logo'/>
                     <span className='title_text'>软三游记党</span>
                 </div>
-                    <span className='destination'>目的地</span>
-                    <span className='travels_name'>游记</span>
-                    <img className="head_portrait" src={require('./icon.png')}/>
-                    <div className='search_box'>
-                        <form>
-                            <input type="text" placeholder="请输入关键字进行搜索"/>
-                            <button></button>
-                            <img src={require('./search.png')}  className='icon'/>
-                        </form>
-                    </div>
+                <span className='destination'>
+                    <Link to="/home">游记</Link>
+                </span>
+                <span className='travels_name'>
+                    <Link to="/detail">目的地</Link>
+                </span>
+                <div className='search_box'>
+                    <form>
+                        <input type="text" placeholder="请输入关键字进行搜索"/>
+                        <button></button>
+                        <img src={require('./search.png')}  className='icon'/>
+                    </form>
+                </div>
                 </div>
             </div>
         )
